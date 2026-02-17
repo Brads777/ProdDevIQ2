@@ -41,6 +41,38 @@ Specialist AI agents you can delegate tasks to:
 - **Phase 1 deliverables** (PRD, rubric, strategic brief)
 - **Gemini API key** (for LLM Council — free from [Google AI Studio](https://aistudio.google.com/apikey))
 
+## The Companion (Browser GUI)
+
+The Companion gives you a browser-based interface for Claude Code — multiple sessions side by side, visual tool call feedback, and streaming responses. Much easier than a plain terminal.
+
+### Quick Install
+
+**Mac / Linux:**
+```bash
+bash install-companion.sh
+```
+
+**Windows (PowerShell):**
+```powershell
+powershell -ExecutionPolicy Bypass -File install-companion.ps1
+```
+
+### Manual Install
+
+1. Install Bun (one-time):
+   - **Mac/Linux:** `curl -fsSL https://bun.sh/install | bash`
+   - **Windows PowerShell:** `irm bun.sh/install.ps1 | iex`
+2. Launch: `bunx the-companion`
+3. Open **localhost:3456** in your browser
+
+### What You Get
+
+- **Multiple sessions** — Run several Claude Code instances side by side
+- **Streaming** — See responses token by token as they're written
+- **Tool visibility** — Every file edit, bash command, and search shown in collapsible blocks
+- **Subagent nesting** — Watch agent teams work hierarchically
+- **Permission control** — Approve or deny tool calls from the browser
+
 ## Phase 2 Deliverables
 
 | Item | File |

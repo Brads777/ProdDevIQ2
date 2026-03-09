@@ -180,40 +180,8 @@ The team base score is adjusted per individual based on peer evaluation:
 
 ---
 
-## Peer Evaluation Form Template
+## Peer Evaluation Form
 
-### Peer Evaluation — MKT2700 Final Deliverable
+The peer evaluation form is a **separate document** (`peer-evaluation.md`). Each team member submits it **individually** on Canvas — it is NOT included in the team submission package.
 
-**Your Name:** _______________
-**Team Name:** _______________
-**Date:** _______________
-
-Rate each team member (including yourself) on a 1–5 scale:
-
-| Team Member | Contribution Quality | Reliability | Communication | Technical Skill | Leadership | Average |
-|-------------|:--------------------:|:-----------:|:-------------:|:---------------:|:----------:|:-------:|
-| [Name 1] | /5 | /5 | /5 | /5 | /5 | |
-| [Name 2] | /5 | /5 | /5 | /5 | /5 | |
-| [Name 3] | /5 | /5 | /5 | /5 | /5 | |
-| [Name 4] | /5 | /5 | /5 | /5 | /5 | |
-| [Yourself] | /5 | /5 | /5 | /5 | /5 | |
-
-**Scale:**
-
-- **5** = Exceptional — went above and beyond
-- **4** = Strong — consistently met expectations
-- **3** = Adequate — did their share
-- **2** = Below average — needed reminders, inconsistent
-- **1** = Minimal — rarely contributed
-
-**Written comments (2–3 sentences minimum per person):**
-
-- [Name 1]:
-- [Name 2]:
-- [Name 3]:
-- [Name 4]:
-- Yourself:
-
-**Overall team dynamic (2–3 sentences):**
-
-**Was the workload distributed fairly? If not, explain:**
+See `peer-evaluation.md` for the full form, rating scale, written comment prompts, and grade adjustment details.

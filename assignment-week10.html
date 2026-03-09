@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment Week 10: Phase 3 Team Project</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2d3b45;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+  }
+  h1 { font-size: 1.8em; color: #c0392b; margin-bottom: 4px; border-bottom: 2px solid #c0392b; padding-bottom: 8px; }
+  h2 { font-size: 1.4em; color: #2c3e50; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  h3 { font-size: 1.15em; color: #34495e; margin-top: 20px; }
+  h4 { font-size: 1em; color: #555; margin-top: 16px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 20px 0; font-size: 0.92em; }
+  th { background: #2c3e50; color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; }
+  td { padding: 8px 12px; border: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background: #f8f9fa; }
+  .meta { color: #555; font-size: 0.95em; line-height: 1.8; }
+  .meta strong { color: #2c3e50; }
+  .callout { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .callout-danger { background: #f8d7da; border-left: 4px solid #dc3545; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .callout-info { background: #d1ecf1; border-left: 4px solid #17a2b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .callout-success { background: #d4edda; border-left: 4px solid #28a745; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; color: #c0392b; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.8em; font-weight: 600; }
+  .badge-required { background: #dc3545; color: #fff; }
+  .badge-optional { background: #6c757d; color: #fff; }
+  ul.checklist { list-style: none; padding-left: 0; }
+  ul.checklist li { padding: 6px 0 6px 28px; position: relative; }
+  ul.checklist li::before { content: "\2610"; position: absolute; left: 0; font-size: 1.2em; }
+  .subtitle { font-size: 1.1em; color: #666; font-style: italic; margin-bottom: 16px; }
+  .copyright { font-size: 0.85em; color: #888; margin-bottom: 4px; }
+  .footer { text-align: center; margin-top: 40px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 0.85em; color: #888; }
+  blockquote { border-left: 3px solid #ccc; margin: 12px 0; padding: 8px 16px; color: #555; background: #fafafa; }
+  .deliverable-num { display: inline-block; width: 28px; height: 28px; background: #2c3e50; color: #fff; text-align: center; line-height: 28px; border-radius: 50%; font-size: 0.85em; font-weight: 600; margin-right: 8px; }
+  .verdict-table td:first-child { font-weight: 600; }
+  ol.round-steps { padding-left: 20px; }
+  ol.round-steps li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+
+<p class="copyright">&copy; 2026 Brad Scheller</p>
+
+<h1>Assignment Week 10: Phase 3 Team Project</h1>
+
+<p class="subtitle">Week 10: Simulated Test Marketing &amp; Concept Validation</p>
+<p class="subtitle" style="font-size: 1em;">From Working Prototype to Market-Validated Product</p>
+
+<div class="meta">
+  <strong>Course:</strong> MKT2700 &mdash; Product Design &amp; Development &mdash; Spring 2026<br>
+  <strong>University:</strong> Northeastern University, College of Professional Studies<br>
+  <strong>Instructor:</strong> Brad Scheller<br>
+  <strong>Due:</strong> Sunday, March 15, 2026, 11:59 PM EST<br>
+  <strong>Points:</strong> 7.5% of Final Grade<br>
+  <strong>Submission:</strong> Canvas (one submission per team by deadline)
+</div>
+
+<div class="callout-danger" style="margin-top: 16px;">
+  <strong>&#9888; Important:</strong> This is a critical validation step before your final presentations. The work you do this week determines whether your product concept is ready for stakeholders &mdash; or needs fundamental rethinking. Take the results seriously. Iterate honestly. The best products survive harsh feedback; they don&rsquo;t avoid it.
+</div>
+
+<!-- ============================================================ -->
+<h2>0 &nbsp; Getting Started</h2>
+
+<p>Phase 3 uses a new project repository with skills and agents designed for test marketing. Follow these steps to set up:</p>
+
+<h3>Step 1: Download the Phase 3 Repository</h3>
+<ol>
+  <li>Go to <a href="https://github.com/Brads777/ProdDevIQ2" target="_blank"><strong>github.com/Brads777/ProdDevIQ2</strong></a></li>
+  <li>Click the green <strong>Code</strong> button &rarr; <strong>Download ZIP</strong></li>
+  <li>Extract the ZIP to your working directory (e.g., your G: Drive or Desktop)</li>
+</ol>
+
+<h3>Step 2: Bring Your Phase 1 Artifacts Forward</h3>
+<p>Copy these files from your Phase 1 project (<code>MKT2700-ProdDevIQ</code>) into the Phase 3 project root:</p>
+<table>
+  <thead><tr><th>File</th><th style="width:12%">Required</th><th>Where You Created It</th></tr></thead>
+  <tbody>
+    <tr><td><code>product-requirements.md</code></td><td><span style="color:#dc3545; font-weight:600;">Required</span></td><td>Phase 1, Step 7 (PRD Generation)</td></tr>
+    <tr><td><code>evaluation-rubric.md</code></td><td><span style="color:#dc3545; font-weight:600;">Required</span></td><td>Phase 1, Step 2 (Rubric Creation)</td></tr>
+    <tr><td><code>strategic-brief.md</code></td><td><span style="color:#6c757d;">Optional</span></td><td>Phase 1, Step 1 (Strategic Foundation)</td></tr>
+    <tr><td><code>evaluation-results.md</code></td><td><span style="color:#6c757d;">Optional</span></td><td>Phase 1, Step 5 (Concept Evaluation)</td></tr>
+    <tr><td><code>refined-concept.md</code></td><td><span style="color:#6c757d;">Optional</span></td><td>Phase 1, Step 6 (Refinement)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>Can&rsquo;t find your files?</strong> Don&rsquo;t worry. When you run <code>/validate-concept</code>, the skill will automatically search for your Phase 1 artifacts in nearby folders. If it still can&rsquo;t find them, it will tell you exactly what it needs and let you paste the content directly.
+</div>
+
+<h3>Step 3: Open Claude Code and Log In</h3>
+<ol>
+  <li>Open a terminal and <code>cd</code> into your extracted Phase 3 folder</li>
+  <li>Run <code>claude</code> to start Claude Code</li>
+  <li>Type <code>/login</code> to connect your Northeastern Claude account</li>
+</ol>
+
+<div class="callout">
+  <strong>Why log in?</strong> Running <code>/login</code> connects Claude Code to your Northeastern-provided Claude account. This means you use <strong>Opus 4.6</strong> at no cost to you &mdash; no API key or credit card required. If you skip this step, Claude Code will ask for an API key and charge you directly. <strong>Always log in first.</strong>
+</div>
+
+<p>Once logged in, you will see a confirmation message. You are now ready to begin:</p>
+<ol start="4">
+  <li>Type <code>/validate-concept</code> to start the simulated test marketing</li>
+</ol>
+
+<!-- ============================================================ -->
+<h2>1 &nbsp; What You Are Doing</h2>
+
+<p>You have spent nine weeks building a product from scratch &mdash; from strategic brief to working prototype. Now it is time to find out if anyone would actually buy it.</p>
+
+<p>This week, you will subject your prototype and PRD to <strong>rigorous simulated market testing</strong> using <strong>100&ndash;200 AI-generated synthetic personas</strong>. These personas are demographically diverse, psychographically distinct, and programmed to give honest &mdash; sometimes harsh &mdash; feedback. This is <strong>not</strong> a rubber stamp. It is a stress test.</p>
+
+<p>The goal is simple: <strong>Find the weaknesses before you present to real stakeholders.</strong></p>
+
+<p>You will conduct three types of testing:</p>
+
+<table>
+  <thead>
+    <tr><th style="width:30%">Test Type</th><th>Description</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. Simulated Market Testing</strong><br><em>100&ndash;200 Personas</em></td>
+      <td>A large panel of AI-generated personas evaluates your concept and provides purchase intent scores, top objections, and detailed feedback. Each persona has a unique demographic profile, tech savviness level, pain point intensity, and willingness to pay. The panel produces a statistically meaningful picture of how your target market would respond.</td>
+    </tr>
+    <tr>
+      <td><strong>2. Simulated User Interviews</strong><br><em>5 Representative Personas</em></td>
+      <td>Five carefully selected personas from the panel sit for deep, 10-question one-on-one interviews. These explore current workflows, pain points, reactions to your prototype, willingness to switch from existing solutions, concerns, and concrete suggestions.</td>
+    </tr>
+    <tr>
+      <td><strong>3. Usability Testing Simulation</strong><br><em>UI/UX Heuristic Evaluation</em></td>
+      <td>Personas spanning the full range of tech savviness evaluate your prototype&rsquo;s user experience against standard usability heuristics, revealing where the interface confuses, frustrates, or delights different user types.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>How Many Personas?</h4>
+<p>The count depends on your target market breadth:</p>
+<table>
+  <thead><tr><th>Market Type</th><th>Persona Count</th></tr></thead>
+  <tbody>
+    <tr><td>Narrow or highly specific market (e.g., pediatric dentists in urban areas)</td><td><strong>100 personas</strong></td></tr>
+    <tr><td>Broad or diverse market (e.g., all small business owners)</td><td><strong>200 personas</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <strong>You MUST iterate.</strong> Run the validation, improve your PRD based on the feedback, and retest until you achieve a <strong>&ldquo;Proceed&rdquo; verdict</strong> (above 80% composite score). If you cannot reach &ldquo;Proceed&rdquo; after two retests, document why and present your plan for getting there.
+</div>
+
+<!-- ============================================================ -->
+<h2>2 &nbsp; Apply Critical Thinking to Your Test Marketing Results</h2>
+
+<p>Simulated market data is only as valuable as your ability to interpret it. Use these five critical thinking skills to move beyond surface-level observations and extract real insight from your persona feedback.</p>
+
+<table>
+  <thead>
+    <tr><th style="width:14%">Thinking Skill</th><th style="width:28%">What It Means</th><th>Apply to Your Test Results</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Analysis</strong></td>
+      <td>Break complex results into component parts</td>
+      <td>Segment persona feedback by demographic. Identify which user types love the concept and which hate it. Find patterns in objections &mdash; are price concerns concentrated in one income bracket or spread evenly?</td>
+    </tr>
+    <tr>
+      <td><strong>Evaluation</strong></td>
+      <td>Assess credibility and relevance of evidence</td>
+      <td>Not all persona feedback is equal. Weight responses by how closely each persona matches your primary target customer. A skeptic outside your target saying &ldquo;I wouldn&rsquo;t buy this&rdquo; means less than your ideal customer saying &ldquo;I have concerns.&rdquo; Distinguish &ldquo;nice to have&rdquo; from &ldquo;must fix.&rdquo;</td>
+    </tr>
+    <tr>
+      <td><strong>Inference</strong></td>
+      <td>Draw warranted conclusions from evidence</td>
+      <td>Connect persona objections to specific product decisions. If 60% of personas cite price as their top objection, the issue is not your marketing copy &mdash; it is your business model. Follow the data to root causes.</td>
+    </tr>
+    <tr>
+      <td><strong>Self-Regulation</strong></td>
+      <td>Monitor your own reasoning and bias</td>
+      <td>Resist the urge to dismiss negative feedback. If you find yourself explaining away objections (&ldquo;those personas just don&rsquo;t get it&rdquo;), that is a signal to investigate deeper, not to ignore. Check whether you are cherry-picking favorable data.</td>
+    </tr>
+    <tr>
+      <td><strong>Explanation</strong></td>
+      <td>Justify decisions with clear evidence</td>
+      <td>Every change to your PRD after testing must cite specific persona data. Not &ldquo;we thought this would be better&rdquo; but &ldquo;we changed X because Y% of personas said Z.&rdquo; Your revised PRD is an evidence trail.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-info">
+  <strong>&#9733; Requirement:</strong> Use at least <strong>2 of these thinking skills explicitly</strong> in your reflection document. Quote specific persona data to demonstrate each skill.
+</div>
+
+<!-- ============================================================ -->
+<h2>3 &nbsp; UI/UX Usability Testing Framework</h2>
+
+<p>Your personas will evaluate your prototype against these usability heuristics. Understanding what each measures helps you interpret the feedback and prioritize fixes.</p>
+
+<table>
+  <thead>
+    <tr><th style="width:14%">Heuristic</th><th style="width:28%">What It Means</th><th>What Personas Evaluate</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Learnability</strong></td>
+      <td>How easy for first-time users to accomplish basic tasks</td>
+      <td>Can a low-tech persona (savviness 1&ndash;2) understand the core workflow from the pitch alone? Or does the product require explanation?</td>
+    </tr>
+    <tr>
+      <td><strong>Efficiency</strong></td>
+      <td>Speed for experienced users to complete tasks</td>
+      <td>Would a power user (savviness 4&ndash;5) find the workflow faster than their current solution? Or is there unnecessary friction?</td>
+    </tr>
+    <tr>
+      <td><strong>Error Tolerance</strong></td>
+      <td>How gracefully the product handles mistakes</td>
+      <td>What happens when a persona misunderstands a feature? Does the product guide them back on track or leave them frustrated and stuck?</td>
+    </tr>
+    <tr>
+      <td><strong>Consistency</strong></td>
+      <td>Predictable patterns across the interface</td>
+      <td>Do similar features work the same way throughout the product? Is the mental model coherent, or does every screen feel like a different product?</td>
+    </tr>
+    <tr>
+      <td><strong>Accessibility</strong></td>
+      <td>Inclusive design for all users</td>
+      <td>Can personas with different abilities, ages, and tech comfort levels all use the product effectively? Are there barriers for any segment?</td>
+    </tr>
+    <tr>
+      <td><strong>Value Clarity</strong></td>
+      <td>How quickly the benefit is obvious</td>
+      <td>Can each persona articulate what the product does and why it matters within 30 seconds of the pitch? If they cannot, your value proposition needs work.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>4 &nbsp; Simulated Market Testing Protocol</h2>
+
+<p>The testing follows three rounds. Each builds on the last.</p>
+
+<h3>Round 1: Broad Market Screening (100&ndash;200 Personas)</h3>
+
+<p>The AI generates a demographically diverse panel of synthetic personas matching your target market definition. Each persona independently evaluates your concept and provides:</p>
+
+<ul>
+  <li><strong>Interest level</strong> (1&ndash;5 scale)</li>
+  <li><strong>Purchase intent</strong> (would buy / might buy / would not buy)</li>
+  <li><strong>Top objection</strong> (the single biggest reason they hesitate)</li>
+  <li><strong>What would make them say yes</strong> (the one change that would convert them)</li>
+  <li><strong>What would make them say no</strong> (the dealbreaker)</li>
+</ul>
+
+<p><strong>Output:</strong> A market heat map showing which segments are hot (high interest, high purchase intent) and which are cold. Rubric scoring against your <code>evaluation-rubric.md</code> from Phase 1. A composite verdict: <strong>Proceed</strong>, <strong>Refine</strong>, or <strong>Kill</strong>.</p>
+
+<h3>Round 2: Deep User Interviews (5 Representative Personas)</h3>
+
+<p>Select 5 personas from the Round 1 panel representing key market segments:</p>
+
+<table>
+  <thead><tr><th style="width:5%">#</th><th style="width:22%">Archetype</th><th>Selection Criteria</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><strong>The Enthusiast</strong></td><td>Highest interest score &mdash; your biggest fan</td></tr>
+    <tr><td>2</td><td><strong>The Skeptic</strong></td><td>Lowest interest score &mdash; your harshest critic</td></tr>
+    <tr><td>3</td><td><strong>The Fence-Sitter</strong></td><td>Middle of the pack &mdash; could go either way</td></tr>
+    <tr><td>4</td><td><strong>The Edge Case</strong></td><td>Unusual demographic or use case that tests your product&rsquo;s boundaries</td></tr>
+    <tr><td>5</td><td><strong>The Primary Target</strong></td><td>The persona closest to your ideal customer profile</td></tr>
+  </tbody>
+</table>
+
+<p>Each persona sits for a <strong>10-question simulated interview</strong> exploring:</p>
+
+<ul>
+  <li>Their current workflow and pain points</li>
+  <li>First reaction to the prototype</li>
+  <li>What they like and dislike specifically</li>
+  <li>Willingness to switch from their current solution</li>
+  <li>Price sensitivity and value perception</li>
+  <li>Concerns about adoption</li>
+  <li>Concrete suggestions for improvement</li>
+</ul>
+
+<p><strong>Output:</strong> Full interview transcripts with extracted themes and patterns across all five interviews.</p>
+
+<h3>Round 3: Iterate &amp; Retest</h3>
+
+<p>This is where the real learning happens.</p>
+
+<ol class="round-steps">
+  <li><strong>Analyze</strong> &mdash; Review Round 1 scores and Round 2 interview themes together. Identify the 3&ndash;5 most critical issues.</li>
+  <li><strong>Update</strong> &mdash; Revise your PRD based on the findings. Document every change and the persona data that motivated it.</li>
+  <li><strong>Rerun</strong> &mdash; Execute Round 1 again with your updated concept. Same persona demographics, fresh evaluations.</li>
+  <li><strong>Compare</strong> &mdash; Measure improvement. Did your composite score go up? Did specific objections decrease? Which segments moved?</li>
+  <li><strong>Repeat if needed</strong> &mdash; Continue until you reach a <strong>&ldquo;Proceed&rdquo; verdict (above 80%)</strong> or can clearly justify why &ldquo;Refine&rdquo; is acceptable.</li>
+</ol>
+
+<div class="callout-success">
+  <strong>How to run:</strong> Use <code>/validate-concept</code> in Claude Code. The skill will guide you through each round, generate the persona panel, run the evaluations, conduct the interviews, and produce all output files automatically.
+</div>
+
+<!-- ============================================================ -->
+<h2>5 &nbsp; This Week&rsquo;s Milestone</h2>
+
+<table>
+  <thead><tr><th style="width:5%">Step</th><th style="width:18%">What</th><th>What You Do</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1</strong></td><td>Prepare</td><td>Copy your PRD, evaluation rubric, and prototype URL into your Phase 3 project folder. Ensure your <code>product-requirements.md</code> and <code>evaluation-rubric.md</code> are current.</td></tr>
+    <tr><td><strong>2</strong></td><td>First Test</td><td>Use <code>/validate-concept</code> &mdash; let the AI generate personas and test your concept. Do not intervene or steer. Let the data speak.</td></tr>
+    <tr><td><strong>3</strong></td><td>Analyze</td><td>Read the persona feedback &mdash; all of it. Apply critical thinking skills from Section 2. Identify the 3 biggest weaknesses in your concept.</td></tr>
+    <tr><td><strong>4</strong></td><td>Improve</td><td>Make specific changes to your PRD based on persona data. Document every change and the data that drove it in a &ldquo;Changes from v1&rdquo; section.</td></tr>
+    <tr><td><strong>5</strong></td><td>Retest</td><td>Rerun <code>/validate-concept</code> with your improved PRD. Compare scores to your first run. Identify what improved and what did not.</td></tr>
+    <tr><td><strong>6</strong></td><td>Report</td><td>Document both test rounds, what changed between them, and why. Include scoring breakdowns and segment analysis.</td></tr>
+    <tr><td><strong>7</strong></td><td>Reflect</td><td>Personal reflection (per team member) on what you learned about your product and the assumptions you held coming in.</td></tr>
+    <tr><td><strong>8</strong></td><td>Present</td><td>Build a compelling 5-minute concept presentation that weaves your test marketing data into the narrative.</td></tr>
+    <tr><td><strong>9</strong></td><td>Submit</td><td>Submit all deliverables to Canvas by <strong>Sunday, March 15 at 11:59 PM EST</strong>.</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>6 &nbsp; Week 10 Deliverables</h2>
+
+<p>All deliverables submitted as <strong>one Canvas submission per team</strong>. Include every item listed below.</p>
+
+<h3><span class="deliverable-num">1</span> Revised PRD &mdash; <code>product-requirements-v2.md</code></h3>
+<p>Your updated Product Requirements Document incorporating all changes from test marketing. Must include a <strong>&ldquo;Changes from v1&rdquo;</strong> section at the top listing every modification with the specific persona data that motivated it. Format each change as:</p>
+<blockquote>
+  <strong>Change:</strong> [what changed]<br>
+  <strong>Reason:</strong> [X% of personas said Y / Persona #Z in interview said &ldquo;quote&rdquo;]<br>
+  <strong>Impact:</strong> [how this changes the product]
+</blockquote>
+
+<h3><span class="deliverable-num">2</span> Test Marketing Report &mdash; <code>test-marketing-report.md</code></h3>
+<p>Complete findings from both test rounds:</p>
+<ul>
+  <li><strong>Round 1 Results:</strong> Persona panel summary, scoring breakdown by segment, market heat map, composite verdict</li>
+  <li><strong>Round 2 Results:</strong> All 5 interview transcripts, theme analysis across interviews, key quotes</li>
+  <li><strong>Round 1 Retest Results:</strong> Updated scores, side-by-side comparison with first run, improvement analysis</li>
+  <li><strong>Statistical Summary:</strong> Overall interest score, purchase intent percentage, top 5 objections ranked by frequency, segment-by-segment analysis</li>
+</ul>
+
+<h3><span class="deliverable-num">3</span> Reflection Document &mdash; <code>reflection.md</code></h3>
+<p><strong>500&ndash;800 words per team member.</strong> Each person addresses:</p>
+<ul>
+  <li>What surprised you about the persona feedback?</li>
+  <li>Which critical thinking skills did you apply and how? (Cite specific persona data.)</li>
+  <li>What assumptions about your target market turned out to be wrong?</li>
+  <li>How did you decide which feedback to act on versus ignore?</li>
+</ul>
+
+<h3><span class="deliverable-num">4</span> Live Concept Presentation &mdash; 5 Minutes (Week 11)</h3>
+<p>Presented live during class in Week 11:</p>
+<table>
+  <thead><tr><th style="width:30%">Segment</th><th style="width:15%">Duration</th><th>Content</th></tr></thead>
+  <tbody>
+    <tr><td>The Product Concept</td><td>1 minute</td><td>What it is, who it is for, why it matters</td></tr>
+    <tr><td>Key Test Marketing Findings</td><td>2 minutes</td><td>What the personas said, strongest and weakest segments, critical objections</td></tr>
+    <tr><td>How You Iterated</td><td>1 minute</td><td>What you changed, what improved, what evidence drove the decisions</td></tr>
+    <tr><td>Final Verdict &amp; Recommendation</td><td>1 minute</td><td>Go / no-go recommendation with supporting data</td></tr>
+  </tbody>
+</table>
+
+<h3><span class="deliverable-num">5</span> Persona Validation Results &mdash; Raw Output Files</h3>
+<p>All raw output files from your <code>/validate-concept</code> runs &mdash; both the initial test and the retest. These are the unedited AI-generated results. Include every file the skill produces.</p>
+
+<!-- ============================================================ -->
+<h2>7 &nbsp; Supercharge with AI Tools</h2>
+
+<p>You are expected to use AI tools throughout this assignment. Here is where each tool adds the most value.</p>
+
+<table>
+  <thead><tr><th style="width:18%">Task</th><th style="width:28%">Recommended Tool</th><th>How to Use It</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Market Testing</strong></td><td>Claude Code + <code>/validate-concept</code></td><td>Runs the full synthetic persona validation &mdash; generates personas, tests your concept, scores against your rubric, produces verdicts</td></tr>
+    <tr><td><strong>Data Visualization</strong></td><td>Claude Code + <code>pptx</code> skill</td><td>Generate charts, graphs, and presentation slides directly from your test marketing data</td></tr>
+    <tr><td><strong>PRD Revision</strong></td><td>Claude Code</td><td>Ask Claude to help revise your PRD based on specific persona objections. Paste the feedback and ask for targeted improvements.</td></tr>
+    <tr><td><strong>Critical Thinking</strong></td><td>Gemini Deep Think / Claude</td><td>Upload your results and ask: &ldquo;What am I missing? What bias am I showing? What patterns do I not see?&rdquo;</td></tr>
+    <tr><td><strong>Interview Analysis</strong></td><td>Claude Code</td><td>Paste interview transcripts and ask for theme extraction, sentiment analysis, and cross-interview pattern identification</td></tr>
+    <tr><td><strong>Presentation Prep</strong></td><td>Claude Code + <code>pptx</code> skill</td><td>Generate your presentation slides from your findings. Include data visualizations that tell the story.</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>8 &nbsp; Week 10 Grading Rubric</h2>
+
+<p>Each criterion is scored 0&ndash;4. Your total score is the weighted sum.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:16%">Criteria</th>
+      <th style="width:19%">Excellent (4)</th>
+      <th style="width:17%">Good (3)</th>
+      <th style="width:17%">Adequate (2)</th>
+      <th style="width:17%">Below Expectations (1)</th>
+      <th style="width:6%">None (0)</th>
+      <th style="width:8%">Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Test Marketing Rigor</strong></td>
+      <td>100&ndash;200 personas generated with clear demographic diversity. Both rounds completed. Retest shows measurable improvement. Statistical summary included with segment analysis.</td>
+      <td>Persona panel generated with reasonable diversity. Both rounds completed. Retest shows some improvement. Basic summary included.</td>
+      <td>Persona panel generated but limited diversity. Only one round completed OR no measurable improvement on retest.</td>
+      <td>Fewer than 100 personas. No retest. Superficial analysis with no segment breakdown.</td>
+      <td>No evidence submitted.</td>
+      <td><strong>30%</strong></td>
+    </tr>
+    <tr>
+      <td><strong>PRD Revision Quality</strong></td>
+      <td>Every change traces to specific persona data with quotes. &ldquo;Changes from v1&rdquo; section is comprehensive. Revised PRD addresses all major objections.</td>
+      <td>Most changes cite persona data. Changes section present. Revised PRD addresses top objections.</td>
+      <td>Some changes made but weak connection to persona data. Changes section incomplete.</td>
+      <td>Minimal changes OR changes not connected to test data. Feels like guesswork, not evidence-based.</td>
+      <td>No revised PRD submitted.</td>
+      <td><strong>25%</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Critical Thinking</strong></td>
+      <td>Reflection demonstrates sophisticated analysis. At least 2 thinking skills applied with specific persona data citations. Honest about wrong assumptions. Distinguishes signal from noise.</td>
+      <td>Reflection shows good analysis. Thinking skills referenced. Some persona data cited. Acknowledges wrong assumptions.</td>
+      <td>Reflection is surface-level. Thinking skills mentioned but not demonstrated with evidence.</td>
+      <td>Reflection is generic or defensive. Dismisses negative feedback. No framework applied.</td>
+      <td>No reflection submitted.</td>
+      <td><strong>20%</strong></td>
+    </tr>
+    <tr>
+      <td><strong>UI/UX Evaluation</strong></td>
+      <td>Usability heuristics evaluated with specific persona reactions. Clear evidence of how prototype UX was assessed and what changes resulted.</td>
+      <td>Most heuristics evaluated. Some persona feedback on UX. At least one change made based on usability findings.</td>
+      <td>Heuristics mentioned but not systematically evaluated. Vague connection between UX feedback and changes.</td>
+      <td>No structured usability evaluation. UX mentioned only in passing.</td>
+      <td>No UX evaluation evidence.</td>
+      <td><strong>15%</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Presentation &amp; Communication</strong></td>
+      <td>5-minute live demo is compelling, data-driven, and well-rehearsed. Test marketing data woven into narrative. Clear go/no-go recommendation with evidence.</td>
+      <td>Good presentation with test data referenced. Mostly within time. Recommendation present.</td>
+      <td>Presentation covers basics but lacks data. Over/under time. Recommendation unclear.</td>
+      <td>Disorganized or reads from report. No test data in narrative.</td>
+      <td>No presentation delivered.</td>
+      <td><strong>10%</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>9 &nbsp; Tips for Success</h2>
+
+<ul class="checklist">
+  <li><strong>Start early this week.</strong> The first test run takes 15&ndash;20 minutes. Leave time for analysis, revision, and the retest.</li>
+  <li><strong>Don&rsquo;t take it personally.</strong> The personas will be harsh &mdash; that is the point. A &ldquo;Kill&rdquo; verdict on Round 1 is normal and expected. It means the system is working.</li>
+  <li><strong>Read EVERY persona response before making changes.</strong> Look for patterns across 100+ responses, not individual outliers. One persona hating your product is noise. Forty personas citing the same objection is signal.</li>
+  <li><strong>Your reflection matters.</strong> The rubric weights critical thinking at 20%. Do not phone it in. Cite specific data. Name the thinking skills you used. Be honest about what you got wrong.</li>
+  <li><strong>Update your PRD, not just your pitch.</strong> The retest evaluates your updated PRD, so changes must be in the document, not just in your talking points.</li>
+  <li><strong>Use the Improvement Roadmap.</strong> The <code>/validate-concept</code> skill gives you an exact list of what to fix, ranked by impact. Follow it.</li>
+  <li><strong>Bring your test data to the presentation.</strong> The strongest presentations cite specific numbers: &ldquo;73% of personas expressed willingness to pay after we added X&rdquo; is infinitely more persuasive than &ldquo;we think people will like it.&rdquo;</li>
+  <li><strong>If you&rsquo;re stuck in &ldquo;Refine&rdquo; after two retests, that is okay.</strong> Document why, present your plan for reaching &ldquo;Proceed,&rdquo; and show that your scores improved even if they did not cross the threshold.</li>
+  <li><strong>Run the usability testing last.</strong> Fix the concept first, then polish the UX. A beautiful interface on a product nobody wants is still a product nobody wants.</li>
+  <li><strong>Every team member should contribute to the reflection.</strong> The rubric asks for 500&ndash;800 words per person. This is individual accountability within a team assignment.</li>
+</ul>
+
+<!-- ============================================================ -->
+<div class="footer">
+  &copy; 2026 Brad Scheller &middot; Northeastern University &middot; MKT2700 Product Design &amp; Development
+</div>
+
+</body>
+</html>

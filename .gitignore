@@ -20,3 +20,12 @@ dist/
 # Build outputs
 build/
 out/
+
+# Test fixtures (instructor-only, not for students)
+product-requirements.md
+evaluation-rubric.md
+persona-validation-results.md
+assignment-week10-playground.html
+
+# Session captures
+docs/

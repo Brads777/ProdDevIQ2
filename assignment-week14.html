@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment Week 14: Final Deliverable — Product Launch Portfolio</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2d3b45;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+  }
+  h1 { font-size: 1.8em; color: #c0392b; margin-bottom: 4px; border-bottom: 2px solid #c0392b; padding-bottom: 8px; }
+  h2 { font-size: 1.4em; color: #2c3e50; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  h3 { font-size: 1.15em; color: #34495e; margin-top: 20px; }
+  h4 { font-size: 1em; color: #555; margin-top: 16px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0 20px 0; font-size: 0.92em; }
+  th { background: #2c3e50; color: #fff; padding: 10px 12px; text-align: left; font-weight: 600; }
+  td { padding: 8px 12px; border: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background: #f8f9fa; }
+  .meta { color: #555; font-size: 0.95em; line-height: 1.8; }
+  .meta strong { color: #2c3e50; }
+  .callout { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .callout-danger { background: #f8d7da; border-left: 4px solid #dc3545; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .callout-info { background: #d1ecf1; border-left: 4px solid #17a2b8; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  .callout-success { background: #d4edda; border-left: 4px solid #28a745; padding: 12px 16px; margin: 16px 0; border-radius: 4px; }
+  code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; color: #c0392b; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 0.8em; font-weight: 600; }
+  .badge-required { background: #dc3545; color: #fff; }
+  .badge-optional { background: #6c757d; color: #fff; }
+  ul.checklist { list-style: none; padding-left: 0; }
+  ul.checklist li { padding: 6px 0 6px 28px; position: relative; }
+  ul.checklist li::before { content: "\2610"; position: absolute; left: 0; font-size: 1.2em; }
+  .subtitle { font-size: 1.1em; color: #666; font-style: italic; margin-bottom: 16px; }
+  .copyright { font-size: 0.85em; color: #888; margin-bottom: 4px; }
+  .footer { text-align: center; margin-top: 40px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 0.85em; color: #888; }
+  blockquote { border-left: 3px solid #ccc; margin: 12px 0; padding: 8px 16px; color: #555; background: #fafafa; }
+  .deliverable-num { display: inline-block; width: 28px; height: 28px; background: #2c3e50; color: #fff; text-align: center; line-height: 28px; border-radius: 50%; font-size: 0.85em; font-weight: 600; margin-right: 8px; }
+  .verdict-table td:first-child { font-weight: 600; }
+  ol.round-steps { padding-left: 20px; }
+  ol.round-steps li { margin-bottom: 6px; }
+  pre { background: #f4f4f4; padding: 14px 18px; border-radius: 4px; font-size: 0.88em; overflow-x: auto; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<p class="copyright">&copy; 2026 Brad Scheller</p>
+
+<h1>Assignment Week 14: Final Deliverable</h1>
+
+<p class="subtitle">Week 14: Product Launch Portfolio</p>
+<p class="subtitle" style="font-size: 1em;">From Idea to Market-Validated Product</p>
+
+<div class="meta">
+  <strong>Course:</strong> MKT2700 &mdash; Product Design &amp; Development &mdash; Spring 2026<br>
+  <strong>University:</strong> Northeastern University, College of Professional Studies<br>
+  <strong>Instructor:</strong> Brad Scheller<br>
+  <strong>Due:</strong> Sunday, April 21, 2026, 11:59 PM EST<br>
+  <strong>Points:</strong> 10% of Final Grade<br>
+  <strong>Submission:</strong> Canvas (one submission per team by deadline)
+</div>
+
+<div class="callout-danger" style="margin-top: 16px;">
+  <strong>&#9888; Important:</strong> This is the culmination of 14 weeks of work. Quality matters &mdash; this portfolio represents you professionally. Everything you have built, tested, and refined comes together in one polished package. Treat this as a deliverable you would hand to an investor, a hiring manager, or a client. It is not just an assignment &mdash; it is a professional artifact.
+</div>
+
+<!-- ============================================================ -->
+<h2>0 &nbsp; What You Are Submitting</h2>
+
+<p>You have taken a product from a blank page through strategic research, concept development, prototyping, and rigorous simulated market testing. This final deliverable brings it all together into a professional portfolio that demonstrates your full product development journey.</p>
+
+<p>Over the past 14 weeks, you completed three major phases:</p>
+
+<table>
+  <thead><tr><th style="width:18%">Phase</th><th style="width:14%">Weeks</th><th>What You Did</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Phase 1</strong></td>
+      <td>Weeks 1&ndash;5</td>
+      <td><strong>The 7-Phase Product Lab</strong> &mdash; Strategic brief, rubric creation, concept discovery, deep research, LLM Council evaluation, refinement, PRD generation, and narrative synthesis. Produced 8 core artifacts.</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 2</strong></td>
+      <td>Weeks 6&ndash;9</td>
+      <td><strong>PRD to Working Prototype</strong> &mdash; Scaffolding, architecture, frontend/backend development, UI polish, and initial persona validation. Turned your PRD into a working product.</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 3</strong></td>
+      <td>Week 10</td>
+      <td><strong>Simulated Test Marketing</strong> &mdash; 100&ndash;200 synthetic personas, user interviews, usability testing, iterate-and-retest cycle. Validated your product against real market conditions.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Now, in Week 14, you compile everything into one polished final package.</p>
+
+<div class="callout">
+  <strong>Team submission, individual grading.</strong> This is a <strong>team submission</strong> but you will be <strong>graded individually</strong> based on peer evaluation feedback. Every team member must contribute meaningfully to the final package. Peer evaluations are submitted separately and directly impact your individual grade.
+</div>
+
+<!-- ============================================================ -->
+<h2>1 &nbsp; Portfolio Contents</h2>
+
+<p>Your final submission is a complete portfolio containing everything listed below. This is the master inventory of what goes into your submission.</p>
+
+<table>
+  <thead><tr><th style="width:24%">Component</th><th>Description</th><th style="width:16%">Source Phase</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Capstone Report</strong></td>
+      <td>8&ndash;12 page synthesis of the full product development journey, from strategic research through market validation</td>
+      <td>New (Week 14)</td>
+    </tr>
+    <tr>
+      <td><strong>Final Presentation Video</strong></td>
+      <td>Up to 15-minute polished team presentation covering the problem, product, research, validation, and go-to-market recommendation</td>
+      <td>New (Week 14)</td>
+    </tr>
+    <tr>
+      <td><strong>Product Demo</strong></td>
+      <td>Working app demo video OR product photos OR business concept materials (varies by product type)</td>
+      <td>Phase 2 + 3</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 1 Artifact Bundle</strong></td>
+      <td>All 8 Phase 1 artifacts: <code>strategic-brief.md</code>, <code>evaluation-rubric.md</code>, <code>concept-candidates.md</code>, <code>research-repository.md</code>, <code>evaluation-results.md</code>, <code>refined-concept.md</code>, <code>product-requirements.md</code>, <code>presentation-script.md</code></td>
+      <td>Phase 1</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 2 Artifact Bundle</strong></td>
+      <td>Prototype code/URL, architecture docs</td>
+      <td>Phase 2</td>
+    </tr>
+    <tr>
+      <td><strong>Phase 3 Artifact Bundle</strong></td>
+      <td>Test marketing results, interview transcripts, usability scorecard, market heat map, revised PRD, test marketing report, reflection</td>
+      <td>Phase 3</td>
+    </tr>
+    <tr>
+      <td><strong>Peer Evaluation</strong></td>
+      <td>Individual peer evaluation form (submitted separately on Canvas &mdash; NOT included in the team package)</td>
+      <td>Week 14</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>2 &nbsp; Capstone Report</h2>
+
+<p>The capstone report is the centerpiece of your portfolio. <strong>8&ndash;12 pages, professional formatting.</strong> This is not a data dump &mdash; it is a polished narrative that tells the story of your product from inception to market validation.</p>
+
+<h3><span class="deliverable-num">1</span> Executive Summary (1 page)</h3>
+<p>The product, the market, the verdict. A busy executive should understand your product after reading only this page. Cover what the product is, who it serves, how you validated it, and whether it is ready for market.</p>
+
+<h3><span class="deliverable-num">2</span> The Journey (2&ndash;3 pages)</h3>
+<p>How you got here. Key decisions at each phase, pivots you made, what surprised you. This is <strong>not</strong> a chronological log &mdash; it is a narrative of the most important moments. Focus on:</p>
+<ul>
+  <li>The critical decision points where your product could have gone a different direction</li>
+  <li>Pivots you made and what motivated them</li>
+  <li>What you believed at the start versus what the data told you</li>
+  <li>Moments where the team disagreed and how you resolved it</li>
+</ul>
+
+<h3><span class="deliverable-num">3</span> Market Validation Results (2&ndash;3 pages)</h3>
+<p>Your Phase 3 test marketing findings presented with professional rigor:</p>
+<ul>
+  <li><strong>Persona panel composition:</strong> Demographics, segments, diversity of the testing panel</li>
+  <li><strong>Scoring results:</strong> Before and after iteration &mdash; show the improvement</li>
+  <li><strong>Key objections:</strong> What the personas pushed back on and how you addressed each one</li>
+  <li><strong>Segment analysis:</strong> Which segments are hot versus cold and why</li>
+  <li><strong>Data visualizations:</strong> Include charts, heat maps, and graphs &mdash; not just raw numbers</li>
+</ul>
+
+<h3><span class="deliverable-num">4</span> Product Specification (1&ndash;2 pages)</h3>
+<p>Final product description incorporating all changes from testing. This is your <code>product-requirements-v2.md</code> in polished prose, not raw markdown. Write it as if a developer or manufacturer will build from this description. Include core features, target user, key differentiators, and technical requirements.</p>
+
+<h3><span class="deliverable-num">5</span> Go-to-Market Readiness Assessment (1 page)</h3>
+<p>An honest evaluation of where your product stands. Answer these questions directly:</p>
+<ul>
+  <li>Is this product ready for real users? Why or why not?</li>
+  <li>What would you need to do next to launch?</li>
+  <li>What gaps remain in the product, the research, or the team&rsquo;s capabilities?</li>
+  <li>What is the biggest risk if you launched tomorrow?</li>
+</ul>
+
+<h3><span class="deliverable-num">6</span> Reflection (1&ndash;2 pages)</h3>
+<p><strong>Each team member contributes a personal reflection (300&ndash;500 words each).</strong> This section should contain clearly labeled individual entries. Each person addresses:</p>
+<ul>
+  <li>What would you do differently if you started over?</li>
+  <li>Do you feel this product is ready to go to market? Why or why not?</li>
+  <li>What other steps would have helped you prepare better?</li>
+  <li>What was the most valuable thing you learned in this course?</li>
+</ul>
+
+<div class="callout-info">
+  <strong>&#9733; Quality bar:</strong> Think of this report as something you would include in a job portfolio or show to an investor. Professional formatting, clear writing, evidence-based arguments. First impressions matter &mdash; a polished report signals a polished thinker.
+</div>
+
+<!-- ============================================================ -->
+<h2>3 &nbsp; Final Presentation Video</h2>
+
+<p><strong>Up to 15 minutes. Polished, rehearsed, professional.</strong> This is NOT a screen recording of you reading slides &mdash; it is a presentation you would give to investors or stakeholders. Record it with good audio, proper lighting, and confident delivery.</p>
+
+<table>
+  <thead><tr><th style="width:28%">Segment</th><th style="width:12%">Duration</th><th>Content</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>The Problem &amp; Opportunity</strong></td>
+      <td>2 min</td>
+      <td>What problem did you discover? Why does it matter? Who suffers from it?</td>
+    </tr>
+    <tr>
+      <td><strong>The Product</strong></td>
+      <td>3 min</td>
+      <td>What you built. Live demo or walkthrough. Key features and differentiators.</td>
+    </tr>
+    <tr>
+      <td><strong>The Research Journey</strong></td>
+      <td>3 min</td>
+      <td>Phase 1 highlights: strategic brief findings, LLM Council debate, key pivots from research to refined concept.</td>
+    </tr>
+    <tr>
+      <td><strong>Market Validation</strong></td>
+      <td>3 min</td>
+      <td>Phase 3 results: what 100&ndash;200 personas said, how you iterated, final scores and verdict.</td>
+    </tr>
+    <tr>
+      <td><strong>Go-to-Market Recommendation</strong></td>
+      <td>2 min</td>
+      <td>Ready or not? What&rsquo;s next? Honest assessment backed by data.</td>
+    </tr>
+    <tr>
+      <td><strong>Q&amp;A Preparation</strong></td>
+      <td>2 min</td>
+      <td>Anticipate 3 tough questions and answer them proactively. Show that you have thought beyond the obvious.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout-danger">
+  <strong>&#9888; Non-negotiable:</strong> Every team member must speak in the video. Label who is speaking with a name overlay or verbal introduction at each transition. A presentation where one person carries the entire team is not a team presentation.
+</div>
+
+<!-- ============================================================ -->
+<h2>4 &nbsp; Product Demo</h2>
+
+<p>The format of your product demo depends on what you built. Follow the guidelines for your product type.</p>
+
+<h3>If your product is a software application:</h3>
+<ul>
+  <li>Record a <strong>3&ndash;5 minute screen recording</strong> walking through the working prototype</li>
+  <li>Show the core user flow from start to finish</li>
+  <li>Demonstrate at least <strong>3 key features</strong></li>
+  <li>Show it working (deployed URL preferred, localhost acceptable)</li>
+</ul>
+
+<h3>If your product is a physical object:</h3>
+<ul>
+  <li>Provide <strong>5&ndash;10 high-resolution photos</strong> from multiple angles</li>
+  <li>Include at least one photo showing the product <strong>in use</strong> (in context)</li>
+  <li>Include a <strong>1-page product spec sheet</strong> (dimensions, materials, manufacturing considerations)</li>
+</ul>
+
+<h3>If your product is a business concept / service:</h3>
+<ul>
+  <li><strong>Brand identity package:</strong> logo, color palette, typography</li>
+  <li><strong>Service flow diagram</strong> showing how a customer interacts with the business</li>
+  <li>At least <strong>2 mockups</strong> showing customer touchpoints (website, app, physical space, etc.)</li>
+  <li>A <strong>1-page business model canvas</strong></li>
+</ul>
+
+<div class="callout">
+  <strong>Regardless of product type:</strong> Your demo should demonstrate that the product <em>works</em> or has been thought through to a level of detail that proves feasibility. Concepts alone are not enough &mdash; show evidence of execution.
+</div>
+
+<!-- ============================================================ -->
+<h2>5 &nbsp; Peer Evaluation</h2>
+
+<p>Each team member submits a <strong>separate, individual</strong> peer evaluation form. This is <strong>NOT</strong> submitted with the team package &mdash; it is submitted individually on Canvas.</p>
+
+<p>The peer evaluation covers:</p>
+<ul>
+  <li><strong>Rate each teammate (including yourself)</strong> on five dimensions: contribution quality, reliability, communication, technical skill, and leadership</li>
+  <li><strong>Scale:</strong> 1&ndash;5 for each dimension</li>
+  <li><strong>Written comment</strong> (2&ndash;3 sentences minimum) for each teammate explaining your rating</li>
+  <li>Your <strong>honest assessment of the team dynamic</strong> &mdash; what worked and what did not</li>
+</ul>
+
+<div class="callout-danger">
+  <strong>&#9888; Confidential:</strong> Peer evaluations are confidential. Your teammates will NOT see your individual ratings. These directly impact individual grades &mdash; a team member who contributed significantly more or less than others will be graded accordingly. Be honest. Inflating or deflating ratings undermines the process for everyone.
+</div>
+
+<!-- ============================================================ -->
+<h2>6 &nbsp; Phase Artifact Bundles</h2>
+
+<p>All raw artifacts from all three phases should be included in your submission. Organize them cleanly in the following folder structure:</p>
+
+<pre>
+Final_Submission/
+├── capstone-report.pdf
+├── presentation-video.mp4
+├── product-demo/
+│   ├── (demo video, screenshots, or brand materials)
+├── phase-1-artifacts/
+│   ├── strategic-brief.md
+│   ├── evaluation-rubric.md
+│   ├── concept-candidates.md
+│   ├── research-repository.md
+│   ├── evaluation-results.md
+│   ├── refined-concept.md
+│   ├── product-requirements.md
+│   └── presentation-script.md
+├── phase-2-artifacts/
+│   ├── (prototype source code or deployed URL)
+│   └── architecture.md
+├── phase-3-artifacts/
+│   ├── persona-validation-results.md
+│   ├── interview-transcripts.md
+│   ├── usability-scorecard.md
+│   ├── market-heat-map.md
+│   ├── product-requirements-v2.md
+│   ├── test-marketing-report.md
+│   └── reflection.md
+└── peer-evaluation.md (submitted separately)
+</pre>
+
+<div class="callout-info">
+  <strong>&#9733; Organization matters.</strong> A messy submission suggests a messy process. Use the folder structure above exactly. Name your files consistently. If you cannot find your Phase 1 artifacts, retrieve them from your original <code>MKT2700-ProdDevIQ</code> project folder.
+</div>
+
+<!-- ============================================================ -->
+<h2>7 &nbsp; Supercharge with AI Tools</h2>
+
+<p>You are expected to use AI tools to produce professional-quality deliverables. Here is where each tool adds the most value for your final portfolio.</p>
+
+<table>
+  <thead><tr><th style="width:22%">Task</th><th style="width:28%">Recommended Tool</th><th>How to Use It</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><strong>Capstone Report</strong></td>
+      <td>Claude Code</td>
+      <td>Draft sections, polish prose, generate data visualizations from your Phase 3 results. Use it to synthesize across phases &mdash; paste artifacts and ask for narrative connections.</td>
+    </tr>
+    <tr>
+      <td><strong>Presentation Slides</strong></td>
+      <td>Claude Code + <code>pptx</code> skill</td>
+      <td>Generate professional slides directly from your data. Include charts and visualizations that tell the story visually.</td>
+    </tr>
+    <tr>
+      <td><strong>Video Editing</strong></td>
+      <td>CapCut / iMovie / DaVinci Resolve</td>
+      <td>Free video editors for combining clips, adding name overlays, polishing audio, and creating a professional final cut.</td>
+    </tr>
+    <tr>
+      <td><strong>Data Visualization</strong></td>
+      <td>Claude Code</td>
+      <td>Generate charts and graphs from your <code>persona-validation-results.md</code>. Heat maps, bar charts, and score comparisons for the capstone report.</td>
+    </tr>
+    <tr>
+      <td><strong>Brand Materials</strong></td>
+      <td>Claude Code / Canva</td>
+      <td>Logo design, mockups, brand identity packages. Canva is free for students and produces professional results quickly.</td>
+    </tr>
+    <tr>
+      <td><strong>Report Formatting</strong></td>
+      <td>Google Docs / Word</td>
+      <td>Professional formatting, consistent headers, page numbers, table of contents, PDF export. The final report should look publication-ready.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============================================================ -->
+<h2>7a &nbsp; How to Build Your Slides and Record Your Video</h2>
+
+<p>This section walks you through the two most common questions: how to generate professional slides using Claude Code, and how to record a polished demo video.</p>
+
+<h3>Generating Slides with the <code>pptx</code> Skill</h3>
+
+<p>Claude Code can generate a complete PowerPoint deck directly from your data. This is the fastest way to turn your Phase 3 results, capstone insights, and product narrative into presentation-ready slides.</p>
+
+<h4>Step-by-step:</h4>
+<ol class="round-steps">
+  <li>Open Claude Code in your project directory (where your Phase 1&ndash;3 artifacts live).</li>
+  <li>Type <strong>&ldquo;Create a presentation for my final deliverable&rdquo;</strong> or run <code>/pptx</code> to invoke the PowerPoint skill directly.</li>
+  <li>Claude will read your artifacts (<code>product-requirements.md</code>, <code>persona-validation-results.md</code>, <code>market-heat-map.md</code>, etc.) and generate a <code>.pptx</code> file with your content organized into slides.</li>
+  <li>Tell Claude what you want. Example prompts:
+    <ul>
+      <li><em>&ldquo;Create a 15-slide presentation covering problem, product, research journey, market validation results, and go-to-market recommendation.&rdquo;</em></li>
+      <li><em>&ldquo;Include a slide showing my persona panel demographics as a pie chart.&rdquo;</em></li>
+      <li><em>&ldquo;Add a before-and-after slide comparing my Round 1 and retest scores.&rdquo;</em></li>
+      <li><em>&ldquo;Generate a market heat map slide showing which segments are hot vs. cold.&rdquo;</em></li>
+    </ul>
+  </li>
+  <li>Open the generated <code>.pptx</code> in PowerPoint or Google Slides. Customize colors, fonts, and images to match your brand.</li>
+  <li>Iterate: ask Claude to regenerate specific slides or add charts from your validation data.</li>
+</ol>
+
+<div class="callout-info">
+  <strong>&#9733; Pro tip:</strong> Don&rsquo;t try to fit everything on every slide. The best presentations have <strong>one idea per slide</strong> with supporting data. Let your spoken narration carry the detail &mdash; the slides are visual anchors, not a script.
+</div>
+
+<h3>Recording Your Demo Video</h3>
+
+<p>Your product demo video (3&ndash;5 minutes, separate from the presentation video) should show your product in action. Here&rsquo;s how, by product type:</p>
+
+<h4>Software applications:</h4>
+<ol class="round-steps">
+  <li><strong>Screen recording tools</strong> (all free):
+    <ul>
+      <li><strong>Windows:</strong> Press <code>Win + G</code> to open Xbox Game Bar &rarr; click Record. Or use <a href="https://obsproject.com/">OBS Studio</a> (free, cross-platform).</li>
+      <li><strong>Mac:</strong> Press <code>Cmd + Shift + 5</code> for built-in screen recording. Or use OBS Studio.</li>
+      <li><strong>Loom</strong> (free tier): Records screen + webcam with instant sharing link.</li>
+    </ul>
+  </li>
+  <li><strong>Before you hit record:</strong>
+    <ul>
+      <li>Close unnecessary tabs and notifications</li>
+      <li>Set your browser zoom to 100% (or 90% if your app is wide)</li>
+      <li>Pre-load your app to the starting screen so you don&rsquo;t waste time navigating</li>
+      <li>Write a brief script: &ldquo;First I&rsquo;ll show [feature A], then [feature B], then [feature C]&rdquo;</li>
+    </ul>
+  </li>
+  <li><strong>Narrate as you go.</strong> Explain what you&rsquo;re clicking and why. &ldquo;Here I&rsquo;m creating a new [X] &mdash; notice how the interface [Y].&rdquo;</li>
+  <li><strong>Show the complete user flow</strong> from first interaction to final outcome. Don&rsquo;t skip steps.</li>
+</ol>
+
+<h4>Physical products:</h4>
+<ol class="round-steps">
+  <li>Use a <strong>clean, well-lit surface</strong> (natural light near a window works best).</li>
+  <li>Take photos from <strong>5+ angles</strong>: front, back, side, top-down, and at least one in-context shot (product being used or in its intended environment).</li>
+  <li>Use your phone camera in <strong>landscape mode</strong> at the highest resolution.</li>
+  <li>For a video walkthrough: hold the camera steady (use a tripod or prop your phone) and narrate the product&rsquo;s features as you show them.</li>
+</ol>
+
+<h4>Business concepts / services:</h4>
+<ol class="round-steps">
+  <li>Use the <code>pptx</code> skill to generate your <strong>brand identity slides</strong> (logo, color palette, typography choices).</li>
+  <li>Use Claude Code or <a href="https://www.canva.com">Canva</a> (free for students) to create <strong>service flow diagrams</strong> and <strong>customer touchpoint mockups</strong>.</li>
+  <li>Record a <strong>narrated walkthrough</strong> of your mockups using screen recording, showing how a customer moves through the service experience.</li>
+</ol>
+
+<h3>Combining Everything into the Final Presentation Video</h3>
+
+<p>Your 15-minute final video combines your slides, demo footage, and team narration. Here&rsquo;s the recommended workflow:</p>
+
+<ol class="round-steps">
+  <li><strong>Generate your slide deck</strong> using <code>/pptx</code> in Claude Code.</li>
+  <li><strong>Record your demo</strong> separately (3&ndash;5 minutes).</li>
+  <li><strong>Record each team member&rsquo;s section</strong> with slides visible (share screen on Zoom/Teams/Google Meet and record, or use Loom).</li>
+  <li><strong>Edit together</strong> using a free video editor:
+    <ul>
+      <li><strong>CapCut</strong> (free, very easy, browser-based)</li>
+      <li><strong>DaVinci Resolve</strong> (free, professional-grade)</li>
+      <li><strong>iMovie</strong> (free on Mac)</li>
+      <li><strong>Clipchamp</strong> (built into Windows 11)</li>
+    </ul>
+  </li>
+  <li><strong>Add name overlays</strong> for each speaker transition so the viewer knows who is talking.</li>
+  <li><strong>Export as MP4</strong> at 1080p. Upload to Canvas or provide a shareable link (Google Drive, YouTube unlisted).</li>
+</ol>
+
+<div class="callout">
+  <strong>Recording tip:</strong> Record each speaker&rsquo;s segment separately, then stitch them together. This is far easier than trying to get a perfect 15-minute take. You can also record as a team on Zoom/Teams &mdash; just make sure each person shares their screen when presenting their section.
+</div>
+
+<!-- ============================================================ -->
+<h2>8 &nbsp; Grading</h2>
+
+<p>See the separate <strong>Final Rubric</strong> document for detailed grading criteria. The rubric evaluates 6 dimensions weighted by importance:</p>
+
+<table>
+  <thead><tr><th style="width:50%">Dimension</th><th>Weight</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Capstone Report Quality</strong></td><td><strong>25%</strong></td></tr>
+    <tr><td><strong>Final Presentation &amp; Video</strong></td><td><strong>20%</strong></td></tr>
+    <tr><td><strong>Product Demo</strong></td><td><strong>15%</strong></td></tr>
+    <tr><td><strong>Market Validation Evidence</strong></td><td><strong>15%</strong></td></tr>
+    <tr><td><strong>Portfolio Completeness</strong></td><td><strong>10%</strong></td></tr>
+    <tr><td><strong>Individual Contribution (Peer Eval)</strong></td><td><strong>15%</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <strong>Individual grade adjustment:</strong> Individual grades are adjusted based on peer evaluation. If your team scores 85% but peers indicate you contributed significantly below average, your individual grade will be adjusted downward. The reverse is also true &mdash; strong contributors on weaker teams will be recognized. This is not a free-rider-friendly assignment.
+</div>
+
+<!-- ============================================================ -->
+<h2>9 &nbsp; Tips for Success</h2>
+
+<ul class="checklist">
+  <li><strong>Start the capstone report NOW.</strong> Do not wait until the last weekend. Writing 8&ndash;12 quality pages takes multiple drafts. First drafts are never good enough.</li>
+  <li><strong>Record the presentation video early.</strong> Bad audio, poor lighting, and rushed delivery are the most common issues. Record a practice run first. Watch it back. Then record the real one.</li>
+  <li><strong>Every team member must speak in the video.</strong> This is non-negotiable. Plan who covers which section and rehearse the transitions.</li>
+  <li><strong>Your product demo should work.</strong> If your prototype has bugs, fix them or clearly note known issues. Do not pretend it works when it does not.</li>
+  <li><strong>Use your Phase 3 data in the presentation.</strong> &ldquo;73% of personas said X&rdquo; is more persuasive than &ldquo;we think people will like it.&rdquo; Let the evidence do the talking.</li>
+  <li><strong>The reflection is personal.</strong> Do not copy-paste the same reflection across team members. The grader will notice. Each person&rsquo;s 300&ndash;500 words should be distinctly their own.</li>
+  <li><strong>Organize your submission folder cleanly.</strong> A messy submission suggests a messy process. Follow the folder structure in Section 6 exactly.</li>
+  <li><strong>Submit the peer evaluation separately and honestly.</strong> It is confidential and it matters. Do not skip it &mdash; missing peer evaluations result in a grade penalty.</li>
+  <li><strong>Proofread everything.</strong> Typos in a capstone report undermine your credibility. Read it out loud. Have a teammate review it. Run spell check at minimum.</li>
+  <li><strong>This portfolio could go on your resume or LinkedIn.</strong> Treat it accordingly. The best student portfolios are indistinguishable from professional work.</li>
+</ul>
+
+<!-- ============================================================ -->
+<div class="footer">
+  &copy; 2026 Brad Scheller &middot; Northeastern University &middot; MKT2700 Product Design &amp; Development
+</div>
+
+</body>
+</html>
